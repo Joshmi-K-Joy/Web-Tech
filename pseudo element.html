@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo element</title>
+    <style>
+        h1::after{
+            content: " Shannu ";
+        }
+        h1::before{
+            content: " Ramyuu ";
+        }
+        h1::first-letter{
+            color: chocolate;
+        }
+        h1::first-line{
+            background-color: bisque;
+        }
+        li::marker{
+            content:"🔸";
+        }
+        li::selection{
+            color: cornflowerblue;
+            background-color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Weds</h1>
+    <ul>
+        <li>Pandas</li>
+        <li>numpy</li>
+        <li>Pytorch</li>
+        <li>Tensorflow</li>
+        <li>matplotlib</li>
+    </ul>
+</body>
+</html>
