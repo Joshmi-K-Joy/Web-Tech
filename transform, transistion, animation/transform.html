@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        center{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 150px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: burlywood;
+            transition: transform 2s ease;
+        }
+        .box:hover{
+            transform: translate(100px,100px);
+        }
+
+        .box1{
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            transition: transform 3s ease;
+        }
+        .box1:hover{
+            transform: scale(2,2);
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+            transition: transform 3s ease;
+        }
+        .box2:hover{
+            transform: rotate(45deg);
+        }
+
+        .box2{
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+            transition: transform 3s ease;
+        }
+        .box2:hover{
+            transform: rotate(45deg);
+        }
+
+        .box3{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            transition: transform 3s ease;
+        }
+        .box3:hover{
+            transform: skew(-60deg);
+        }
+
+        .box4{
+            height: 200px;
+            width: 200px;
+            background-color: greenyellow;
+            transition: transform 3s ease;
+        }
+        .box4:hover{
+            transform: translate(100px,100px) scale(2) rotate(90deg) skew(-60deg);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <!-- /trnslate -->
+        <div class="box"></div>
+    <br>
+    <!-- /scale -->
+    <div class="box1"></div>
+    <br>
+     <!-- /rotate -->
+    <div class="box2"></div>
+    <br>
+    <!-- /skew -->
+    <div class="box3"></div>
+    <br>
+    <!-- /skew -->
+    <div class="box4"></div>
+    </center>
+</body>
+</html>

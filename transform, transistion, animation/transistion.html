@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav{
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: powderblue;
+            transition: all 2s linear 0s ;
+        }
+        h2:hover{
+            color: red;
+            background-color: green;
+        }
+         .parent{
+            height: 500px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: yellow;     
+        }
+        .child1{
+            margin-top: 100px;
+            border: 2px solid crimson;
+            background-color: white;
+            border-radius: 50px;
+            height: 300px;
+            width: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        img{
+            height: 300px; 
+            width: 300px;  
+            transition: all 1s linear 0s;
+            
+        }
+         img:hover{
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <h2>data1</h2>
+        <h2>data2</h2>
+        <h2>data3</h2>
+        <h2>data4</h2>
+        <h2>data5</h2>
+    </nav>
+    <div class="parent">
+        <div class="child1"><img src="./hq720.jpg" alt="" height="300px" width="300px"></div>
+        <dic class="child1"><img src="./Facebook.png" alt=""height="300px" width="300px" ></dic>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            height: 500px;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: steelblue;
+            animation: changeColor 2s linear infinite;
+        }
+        @keyframes changeColor{
+            from{
+                background-color: steelblue;
+            }to{
+                background-color: red;
+            }
+        }
+
+        .box1{
+            height: 250px;
+            width: 250px;
+            background-color: aqua;
+            animation: changeColor2 3s ease-in infinite;
+        }
+        @keyframes changeColor2{
+            0%{
+                background-color: aqua;
+            }
+            25%{
+                background-color: blue;
+            }
+            50%{
+                background-color: brown;
+            }
+            75%{
+                background-color: greenyellow;
+            }
+            100%{
+                background-color: rebeccapurple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+ 
+    <div class="box1"></div>
+    
+</body>
+</html>

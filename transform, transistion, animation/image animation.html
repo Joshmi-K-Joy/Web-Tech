@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 600px;
+            display: flex;
+            justify-content: center;
+        }
+        .pic{
+            width: 200px;
+            height: 200px;
+            animation: bounce 3s linear infinite;
+             
+        }
+        @keyframes bounce{
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(600px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGyeKo6rP2P-uLDINVxm5yL2u5FwaDjXXWTNapk8DSdGqmNy9gALHBFm0LGqMaNi4JYZU&usqp=CAU" alt="">
+    </div>
+</body>
+</html>
