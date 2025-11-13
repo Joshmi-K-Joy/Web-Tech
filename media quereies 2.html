@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries 2</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+        }
+        .nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height:75px;
+            background-color: goldenrod;
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 30%;
+        }
+        .menu-icon{
+            display: none;
+        }
+        @media (max-width:700px){
+            .right{
+                display: none;
+            }
+            .menu-icon{
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Nav-Bar -->
+    <div class="nav">
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+        <div class="right">
+            <h2>Home</h2>
+            <h2>About</h2>
+            <h2>Contact</h2>
+        </div>
+        <div class="menu-icon"> &#9776; </div>
+    </div>
+</body>
+</html>
