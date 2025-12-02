@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount sale</title>
+</head>
+<body>
+    <script>
+        let today=new Date().getDay()
+        let amount=1000
+        let finalAmount;
+        switch(today){
+            case 1:
+            case 2:
+            case 3: 
+            case 4: 
+            case 5: 
+                finalAmount=amount-(amount*0.10)
+                console.log("Week days 10% Discount Applied");
+                break
+            case 0: 
+            case 6: 
+                finalAmount=amount
+                console.log("No discount on Weekends");
+                break
+            default:
+                console.log("Invalid Day");  
+        }
+        console.log(`Orginal Amount : ${amount}`);
+        console.log(`Final Amount : ${finalAmount}`);
+        
+        
+    </script>
+</body>
+</html>
