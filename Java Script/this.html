@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword</title>
+</head>
+<body>
+    <script>
+        let person1={
+            name:"Teju",
+            greet:function(city,state){
+                console.log(`This is ${this.name} from ${city}, ${state}`);
+                
+            }
+        }
+        let person2={
+            name:"Vismaya",
+            greet:person1.greet
+        }
+        person1.greet("Hemavathi","Andhra Pradhesh")
+        person2.greet("Davanagere","Karnataka")
+        
+    </script>
+</body>
+</html>

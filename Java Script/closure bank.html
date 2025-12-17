@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Bank Account</title>
+</head>
+<body>
+    
+    <script>
+        function createBankAccount(){
+            let balance=0;
+            return{
+                deposit:function(amount){
+                    if(amount<=0){
+                        alert("Invalid amount")
+                    }else{
+                        balance=balance+amount
+                        console.log(`Deposit:${amount}, New Balace:${balance}`);
+                    }
+                },
+                withdraw:function(amount){
+                    if (amount<=0){
+                        alert("Invalid amount")
+                    }else if(amount>balance){
+                        alert("Insufficient balance")
+                    }else{
+                        balance=balance-amount
+                        console.log(`Withdraw :${amount}, Current Balance:${balance}`);
+                        
+                    }
+                }
+            }
+        }
+        
+        let Teju=createBankAccount()
+        Teju.deposit(1000)
+        Teju.deposit(2000)
+        Teju.withdraw(500)
+        Teju.withdraw(256)
+        
+        
+        </script>
+</body>
+</html>
