@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype/Inheritance</title>
+</head>
+<body>
+    <script>
+        let animal={
+        eating:function(){
+                console.log("Animal is eating");
+                
+            }
+        }
+            let dog={
+                bark:function(){
+                    console.log("Dog is barking");
+                    
+                }
+            }
+            dog.__proto__=animal
+            dog.bark()
+            dog.eating()
+    </script>
+</body>
+</html>

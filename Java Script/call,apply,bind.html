@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call, apply, bind</title>
+</head>
+<body>
+    <script>
+        let restuarant={
+            serveFood:function(dish,drink){
+                console.log(`Welcome to ${this.name}, Here is ur ${dish} and ${drink}`);
+                
+            }
+        }
+
+        customer1={
+            name:"Kadappa's King Abdul Razak"
+        }
+        customer2={
+            name:"Rakesh's Pentagon Party"
+        }
+        customer3={
+            name:"Shravans Christmas Party"
+        }
+
+        restuarant.serveFood.call(customer1,"Mutton Biriyani","Power House")
+
+        restuarant.serveFood.apply(customer2,["Ragi Balls","IB"])
+
+        let serveLater=restuarant.serveFood.bind(customer3)
+        serveLater("Cake","Milk")
+    </script>
+</body>
+</html>

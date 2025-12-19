@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype Chain </title>
+</head>
+<body>
+    <script>
+        let grandparent={
+            walk(){
+                console.log("Walking");
+                
+            }
+        }
+        let parent={
+            talk(){
+                console.log("Talking");
+                
+            },
+            __proto__:grandparent
+        }
+
+        let child={
+            play(){
+                console.log("Playing");
+                
+            },
+            __proto__:parent
+        }
+
+        child.play()
+        child.talk()
+        child.walk()
+    </script>
+</body>
+</html>
